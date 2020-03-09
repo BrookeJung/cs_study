@@ -16,6 +16,6 @@
   - [INDEX]()
  
 ## 기타
-  - [JAVA]()
+  - [JAVA](https://github.com/BrookeJung/cs_study/blob/master/docs/java/java.md)
   - [SPRING]()
   - [OOP]()
