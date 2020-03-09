@@ -1,21 +1,21 @@
-#Computer Science
+# Computer Science
 
-##contributor 
+## contributor 
 [정지예](https://github.com/BrookeJung)
 
-##Data Structure
+## Data Structure
   - [B-TREE]()
   
-##Algorithm
+## Algorithm
   - [DFS]()
   - [BFS]()
   - [DP]()
   
-##Database
+## Database
   - [SQL,NoSQL]()
   - [INDEX]()
  
-##기타
+## 기타
   - [JAVA]()
   - [SPRING]()
   - [OOP]()
