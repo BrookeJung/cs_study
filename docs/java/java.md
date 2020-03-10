@@ -69,15 +69,15 @@ Wrapper class로 만들어 기능을 할 수 있게 한다.
  * 추가,삭제,정렬이 쉽다. (자료구조내장)
  * 형태의 제약이 없다.(기본자료형 저장시 AutoBoxing)
  배열의 문제 (고정길이 , 추가삭제, 타입제한) -> 컬렉션 사용 
- *_generic_을 사용하여 type을 강제할 수 있다.
+ *_ generic _ 을 사용하여 type을 강제할 수 있다.
  
  ###### Generics : 클래스나 메서드 내부에서 다룰 데이터의 Class Type 지정.
 
-      |순서|중복| 
+||순서|중복||
 -----------------------------------------------------------------
- List | o | o | ArrayList , Vector, LinkedList
- set  | x | x  | HashSet , TreeSet
- map  | o | Key:x Val:o| HashMap, HashTable, TreeMap, Properties
+|List| o | o | ArrayList , Vector, LinkedList|
+|set | x | x  | HashSet , TreeSet|
+|map | o | Key:x Val:o| HashMap, HashTable, TreeMap, Properties|
 
  * ArrayList : 동기화를 지원하지 않는다. 보통 단일 스레드로 작업하기 때문에 더 효과적이다.
                초기용량 : 10
@@ -89,7 +89,7 @@ Wrapper class로 만들어 기능을 할 수 있게 한다.
  * TreeSet : 이진 트리 기반 SetCollection , 정렬기준이 있어야 한다.
  
  ## 추상클래스
- *_추상메소드_를 하나이상 가진 클래스 
+ *_ 추상메소드 _를 하나이상 가진 클래스 
  ###### 추상메소드 : 바디가 없다.
  
  ##인터페이스 
