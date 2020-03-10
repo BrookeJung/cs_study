@@ -9,11 +9,14 @@
  1) POJO : 순수 자바기술로만 이루어진객체 (DTO 생성자 , getter setter …) (plain old jaca object)
  2) 지금은 node.js , Django 등 spring 보다 가벼운게 많아졌다. 
  3) 특징
-   ## 1.OCP - OPEN CLOSED PRINCIPLE -
+   ## 1.OCP 
+   -OPEN CLOSED PRINCIPLE-
    > 클래스나묘듈은 확장에는 열려있어야하고 변경에는 닫혀있어야한다.
    
-   ## 2.DI/IOC - DEPENDENCY INJECTION  /  INVERSION OF CONTROL 
+   ## 2.DI/IOC 
+   - DEPENDENCY INJECTION  /  INVERSION OF CONTROL 
    > - 의존 주입 : BEAN 객체를 생성할 때 값을 넣어주는것으로 객체간의 의존관계를 Runtime에 외부의 조립기가 지정해 주는 것.
+   
     ###### bean : 자바 객체
     | Setter-Injection (선택적 의존성을 사용할때만 사용할것) | Constructor-Injection (권장 ★)  | Field Injection  |
     |---|---|---|
@@ -22,7 +25,8 @@
    > - 제어 역전 : 결합도를 낮추기 위해 객체를 사용하는곳과 생성하는곳을 분리한다.사용할 곳에서 객체를 new 연산자로 생성하는것이 아니라 Spring 이 객체를 만들어 두고 원하는 곳에서 사용할 수 있게 한다.
                   즉, 제어에 대한 제어권이 spring 으로 넘어간다.
    
-   ## 3.AOP - ASPECT ORIENTED PROGRAMMING - 관점지향프로그래밍
+   ## 3.AOP 
+   - ASPECT ORIENTED PROGRAMMING - 관점지향프로그래밍
    > 클래스별로 다른 기능들을 가지는데, 공통으로 들어가는 공통관심사항(CrossCuttingConcern)과 각각의 고유한기능(CoreConcern)을 기준으로 프로그래밍 함으로 공통모듈을 여러코드에 쉽게 적용할 수 있도록 지원하는 기술.
      - JoinPoint :인스턴스의 생성시점(연결할수있는곳)
      - Pointcut : advice가 어떤 결합점에 적용되어야하는지 정의 (넣으려고선택된위치)
@@ -31,7 +35,7 @@
      - Weaving : Aspect를 대상 객쳋에 적용해 새로운 proxy 객체를 생성하는 과정 (붙히는과정)
      	######Proxy : 클라이언트가 사용하려하는 실제 대상인것처럼 위장해 대리역할을 한다.
      ->보조업무의 탈부착이 쉬워지고 주업무코드는 보조업무코드의 변경으로 발생하는수정작업이 필요없다.
-     ![spring1](./img/spring1) ![spring2](./img/spring2.png)
+     ![spring1](./img/spring1.png) ![spring2](./img/spring2.png)
    
   ## Spring MVC 
   > 스프링이기본으로 제공하는 트래잭션 , DI및 AOP 적용을 쉽게 할 수 있도록 돕는다.
