@@ -28,6 +28,7 @@
    ## 3.AOP 
    - ASPECT ORIENTED PROGRAMMING - 관점지향프로그래밍
    > 클래스별로 다른 기능들을 가지는데, 공통으로 들어가는 공통관심사항(CrossCuttingConcern)과 각각의 고유한기능(CoreConcern)을 기준으로 프로그래밍 함으로 공통모듈을 여러코드에 쉽게 적용할 수 있도록 지원하는 기술.
+     
      - JoinPoint :인스턴스의 생성시점(연결할수있는곳)
      - Pointcut : advice가 어떤 결합점에 적용되어야하는지 정의 (넣으려고선택된위치)
      - Advice(=ccc) : 교차점에서 지정한 결합점에서 삽입되어야하는 코드.(공통관심사)
@@ -35,7 +36,8 @@
      - Weaving : Aspect를 대상 객쳋에 적용해 새로운 proxy 객체를 생성하는 과정 (붙히는과정)
      	######Proxy : 클라이언트가 사용하려하는 실제 대상인것처럼 위장해 대리역할을 한다.
      ->보조업무의 탈부착이 쉬워지고 주업무코드는 보조업무코드의 변경으로 발생하는수정작업이 필요없다.
-     ![spring1](./img/spring1.png) ![spring2](./img/spring2.png)
+     
+  ![spring2](./img/spring2.png)
    
   ## Spring MVC 
   > 스프링이기본으로 제공하는 트래잭션 , DI및 AOP 적용을 쉽게 할 수 있도록 돕는다.
