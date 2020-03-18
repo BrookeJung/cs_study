@@ -73,11 +73,11 @@ Wrapper class로 만들어 기능을 할 수 있게 한다.
  
  ###### Generics : 클래스나 메서드 내부에서 다룰 데이터의 Class Type 지정.
 
-||순서|중복||
------------------------------------------------------------------
-|List| o | o | ArrayList , Vector, LinkedList|
-|set | x | x  | HashSet , TreeSet|
-|map | o | Key:x Val:o| HashMap, HashTable, TreeMap, Properties|
+ /| 순서 | 중복 |종류  
+---|---|---|---
+List| o | o | ArrayList , Vector, LinkedList|
+set | x | x | HashSet , TreeSet|
+map | o | Key:x Val:o| HashMap, HashTable, TreeMap, Properties|
 
  * ArrayList : 동기화를 지원하지 않는다. 보통 단일 스레드로 작업하기 때문에 더 효과적이다.
                초기용량 : 10

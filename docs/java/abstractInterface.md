@@ -15,20 +15,20 @@ ex)
 // 구체적인 내용없이 공통점만 뽑아, 객체를 정의/생성하는 툴인 Animal이라는 클래스를 만든다.  
 abstract class Animal { 
    //구체적인 내용 없이 공통점만 뽑아 , cry 메서드를 선언한다. 
-  abstract void cry();}
+  abstract void cry();}
 ```
 
 ```
 //Animal 클래스를 확장(상속)하여 Dog 클래스를 만든다. 
 //이때 추상클래스를 상속받은 클래스를 서브클래스(자식클래스)라 하고 - Dog , Cat
 //상속을 해주는 클래스는 슈퍼클래스(부모클래스) 라 한다. - Animal
-class Dog extends Animal {  void cry(){ //상속받은 메서드를 구체화한다.    sout("왈왈");  }}
-class Cat extends Animal {  void cry(){    sout("야옹");  }}
+class Dog extends Animal {  void cry(){ //상속받은 메서드를 구체화한다.    sout("왈왈");  }}
+class Cat extends Animal {  void cry(){    sout("야옹");  }}
 ```
 ## 추상클래스의 단점
 - 상속이 적합한지는 상관없이 무조건 상속 계층이 발생한다.
 - 서브 클래스에서는 슈퍼 클래스에 의존하게 되는데, 슈퍼 클래스가 변경 없이 유지된다는 보장이 없기 때문에 의도치 않게 서브 클래스에 문제가 발생할 수 있다.
-> 컴포지션으로 해결가능 . 컴포지션이란 슈퍼클래스의 인스턴스를 참조하는 private 필드를 서브 클래스에 주는 설계 방식. 
+> 컴포지션으로 해결가능 . 컴포지션이란 슈퍼클래스의 인스턴스를 참조하는 private 필드를 서브 클래스에 주는 설계 방식. 
 
 ## 추상클래스의 사용
 - 여러개의 가까운 클래스들 (is-a 관계가 형성될) 사이에 동일한 코드를 공유해서 사용하고 싶을때.
@@ -45,15 +45,15 @@ ex) 휴대폰을 조작하기 위해 화면을 누르면 휴대폰 화면이 사
 - 인터페이스를 받아 클래스를 만들때는 implements 를 사용하고 , 여러 개의 인터페이스를 상속할 경우 콤마 (,) 를 사용해 인터페이스 명을 구분한다. 상속을 위해 extends 와 같이 쓰일 경우엔 항상 extends 가 implements 보다 먼저 와야 한다.
 ex)
 ```
-interface Money{  abstract void give(int money, String date);  abstract void receive(int money,String date);}
+interface Money{  abstract void give(int money, String date);  abstract void receive(int money,String date);}
 ```
 
 ```
-class Citizen extends Person implements Money{  @Override
-  public void give(int money, String date){      sout(date+": - "+money);
+class Citizen extends Person implements Money{  @Override
+  public void give(int money, String date){     sout(date+": - "+money);
   }
-  @Override  public void receive(int money,String date){      sout(date+": + "+money);
-  };}
+  @Override  public void receive(int money,String date){      sout(date+": + "+money);
+  };}
 ```
 
 > java1.5 에서 나온 @Override 어노테이션은 생략해도 되지만 일종의 재정의를 위한 안전장치라고 생각하면된다. 인터페이스로부터 상속받은 메서드를 재정의 하지 않으면 컴파일시 오류가 발생한다.
