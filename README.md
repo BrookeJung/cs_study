@@ -14,7 +14,9 @@
 ## Database
   - SQL,NoSQL()
   - INDEX()
- 
+## OS
+  - [Process,Thread](https://github.com/BrookeJung/cs_study/blob/master/docs/os/os.md)
+
 ## 기타
   - [JAVA](https://github.com/BrookeJung/cs_study/blob/master/docs/java/java.md)
    * [인터페이스/추상클래스](https://github.com/BrookeJung/cs_study/blob/master/docs/java/abstractInterface.md)
