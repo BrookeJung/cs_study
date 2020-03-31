@@ -7,7 +7,7 @@
   - B-TREE()
   
 ## Algorithm
-  - DFS()
+  - [DFS](https://github.com/BrookeJung/cs_study/blob/master/document/algo/dfs.md)
   - BFS()
   - DP()
   
